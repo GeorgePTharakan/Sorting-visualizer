@@ -1,0 +1,132 @@
+
+body {
+    background-color: #f9fafc;
+    font-family: Arial, sans-serif;
+}
+#numbers{
+    position: relative;
+}
+#numberValue{
+    position: absolute;
+    left:615px;
+    top:140px;
+}
+
+#speed{
+    position: relative;
+}
+#speedValue{
+    position: absolute;
+    left:375px;
+    top:140px;
+}
+
+#page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #374785; 
+}
+
+#control-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #374785;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    margin: 0 auto;
+    color: white; 
+}
+input{
+    cursor: pointer;
+}
+#regenerate-btn{
+    margin-right: 5px ;
+}
+
+#control-panel label {
+    color: white;
+}
+
+
+#control-panel button {
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#control-panel button:hover {
+    background-color: #d64a4a; 
+}
+
+
+
+
+
+#visualizer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    border: 2px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #f0f4f8;
+
+} 
+
+
+/* Bars with random initial colors */
+.bar {
+    position: relative;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #4CAF50;
+    transition: height 0.3s ease;
+}
+.height-label{
+    position: absolute;
+    bottom: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.bar.sorting {
+    background-color: #f76c6c; /* Changes color during sorting */
+}
+
+.bar.sorted {
+    background-color: #374785; /* Changes to final color after sorted */
+}
+
+
+/* #control-panel input[type="range"] {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 10px;
+    background: #d1d5db;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.9;
+}
+
+#control-panel input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f76c6c;
+    cursor: pointer;
+}
+
+#control-panel input[type="range"]:hover::-webkit-slider-thumb {
+    background: #d64a4a;
+} */
